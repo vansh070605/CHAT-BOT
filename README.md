@@ -47,10 +47,10 @@ Simply open `index.html` in your preferred web browser.
 ```
 📂 CHAT-BOT
 ├── 📂 static
-│   ├── 📜 style.css  # Chatbot UI Styling
+│   ├── 📜 style.css   # Chatbot UI Styling
 ├── 📂 templates
 │   ├── 📜 index.html  # Frontend UI
-├── 📜 chatbot.py          # Backend Logic (Flask API)
+├── 📜 chatbot.py      # Backend Logic (Flask API)
 ├── 📜 script.js       # Chatbot Logic
 └── 📜 README.md       # Project Documentation
 ```
