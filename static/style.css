@@ -1,0 +1,172 @@
+/* 🌙 Dark theme background */
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 🖥️ Chatbox container */
+.chat-container {
+    width: 450px; 
+    height: 600px; 
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* 📌 Chat Header */
+.chat-header {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid cyan;
+}
+
+/* 📜 Chat Box */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🔹 Custom scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+
+/* ✨ Message styling */
+.message {
+    display: flex;
+    margin: 10px 0;
+    max-width: 80%;
+}
+
+/* 👤 User messages */
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    border-radius: 12px 12px 0px 12px;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    padding: 10px 15px;
+    max-width: 75%;
+    display: inline-block;
+}
+
+/* 🤖 Bot messages */
+.bot-message {
+    background-color: #3a3a3a;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    border-radius: 12px 12px 12px 0px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    max-width: 75%;
+    display: inline-block;
+}
+
+/* 🔹 Custom scrollbar */
+#chatbox::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatbox::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+#chatbox::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+
+/* 📝 Input area */
+.input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+/* 🖊️ Input field */
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #252525;
+    color: white;
+    outline: none;
+}
+
+/* 🚀 Send button */
+button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00ffff;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00cccc;
+    box-shadow: 0px 0px 10px cyan;
+    transform: scale(1.05);
+}
+
+.typing-indicator .bubble {
+    width: 40px;
+    height: 20px;
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-indicator .bubble::after {
+    content: "⠇"; /* Unicode for loading dots */
+    font-size: 18px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 10px;
+    float: right;
+    opacity: 0.7;
+}
